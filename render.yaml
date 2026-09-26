@@ -1,0 +1,9 @@
+services:
+  - type: worker
+    name: novamine-telegram-bot
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
